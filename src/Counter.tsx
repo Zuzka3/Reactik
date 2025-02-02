@@ -1,22 +1,17 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
-import '../../react_vite/src/App.css'
+import './App.css';
 
 function Counter() {
-    const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
-    return (
-        <>
-
-            <button onClick={() => setCount((count) => count + 1)}>
-                +
-            </button>
-            <button onClick={() => setCount((count) => count - 1)}>
-                -
-            </button>
-            <p>count is {count}</p>
-        </>
-    )
+  return (
+    <>
+      <button onClick={() => setCount(count => count + 1)}>+</button>
+      <button onClick={() => setCount(count => count - 1)}>-</button>
+      <p>count is {count}</p>
+    </>
+  );
 }
 
-export default Counter
+export default Counter;
