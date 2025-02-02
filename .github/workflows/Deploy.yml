@@ -30,6 +30,8 @@ jobs:
       # 5) Nastavení GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        with:
+          enable: true
 
       # 6) Výsledek uploadneme
       - name: Upload artifact
