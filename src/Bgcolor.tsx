@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import '../../react_vite/src/App.css';
+import './App.css';
 
 function Bgcolor() {
   const [color, setColor] = useState<string>('blue');
