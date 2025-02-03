@@ -6,7 +6,7 @@ function Bgcolor() {
   const [color, setColor] = useState<string>('blue');
 
   const changeColor = () => {
-    const colors = ['blue', 'red'];
+    const colors = ['blue', 'red', 'green'];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     setColor(randomColor);
     document.body.style.backgroundColor = randomColor;
